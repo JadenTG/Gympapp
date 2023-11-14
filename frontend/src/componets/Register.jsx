@@ -24,7 +24,7 @@ import '../App.css'
                 }
               };
               axios
-                ('http://localhost:4000/workoutuser/register', options)
+                ('https://gym-blog-backend.onrender.com/workoutuser/register', options)
                 .then((res) => res.json())
                 .then(data => {
                     console.log(data.data);
@@ -47,7 +47,7 @@ export default function Register() {
         e.preventDefault();
 
         try {
-            axios.post('http://localhost:4000/workoutuser/register', userInfo, {
+            axios.post('https://gym-blog-backend.onrender.com/workoutuser/register', userInfo, {
                 headers: {
                     'Content-Type': 'application/json'
                 }

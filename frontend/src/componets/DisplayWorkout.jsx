@@ -11,7 +11,7 @@ export default function DisplayWorkout() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4000/workouts/", userForm)
+      .get("https://gym-blog-backend.onrender.com/workouts/", userForm)
       .then((res) => {
         setUserForm(res.data.data);
       });

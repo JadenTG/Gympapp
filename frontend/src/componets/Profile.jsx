@@ -10,7 +10,7 @@ export default function Profile() {
 
     useEffect(() => {
         axios
-            .get("http://localhost:4000/workouts/getfromuser/" + userData.username, userForm)
+            .get("https://gym-blog-backend.onrender.com/workouts/getfromuser/" + userData.username, userForm)
             .then((res) => {
                 setUserForm(res.data.data);
             });

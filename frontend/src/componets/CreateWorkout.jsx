@@ -42,7 +42,7 @@ function CreateWorkout() {
     console.log(userData);
 
     axios
-      .post("http://localhost:4000/workouts/create-workout", userForm)
+      .post("https://gym-blog-backend.onrender.com/workouts/create-workout", userForm)
       .then((res) => {
         console.log(res.data);
         setUserForm({

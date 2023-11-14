@@ -26,7 +26,7 @@ export default function SignIn() {
             'content-Type': 'application/json'
           }
         };
-        var Data = await fetch('http://localhost:4000/workoutuser/sign-in', options);
+        var Data = await fetch('https://gym-blog-backend.onrender.com/workoutuser/sign-in', options);
         var a = await Data.json();
         console.log(a.data, UserInfo);
        
